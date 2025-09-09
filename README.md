@@ -59,6 +59,16 @@ code --install-extension markdown-notes-0.0.1.vsix
 2. Run `vsce package` to create a `.vsix` file
 3. Install the generated extension using any of the methods above
 
+### After Installation
+
+Once the extension is installed:
+1. Restart VS Code (if required)
+2. Look for "Markdown Notes" in the Explorer sidebar
+3. If you don't see it, try:
+   - Opening the Explorer panel (Ctrl+Shift+E)
+   - Scrolling down in the Explorer sidebar
+   - Right-clicking in the Explorer and checking if "Markdown Notes" is available
+
 ## Development
 
 ### Project Structure
@@ -80,8 +90,27 @@ code --install-extension markdown-notes-0.0.1.vsix
 
 - Visual Studio Code 1.74.0 or higher
 
+## Troubleshooting
+
+### Extension Not Appearing
+If the "Markdown Notes" panel doesn't appear in the Explorer sidebar:
+1. Make sure the extension is installed and enabled in the Extensions view
+2. Try reloading VS Code (Ctrl+Shift+P → "Developer: Reload Window")
+3. Check if the Explorer panel is open (Ctrl+Shift+E)
+4. Look for "Markdown Notes" at the bottom of the Explorer sidebar
+
+### Installation Issues
+If you encounter issues during installation:
+1. Make sure you have the latest version of VS Code
+2. Try installing via a different method (GUI vs Command Line)
+3. Check the Output panel for error messages (View → Output)
+
+### Notes Not Saving
+If notes aren't being saved:
+1. Check VS Code's permissions to write to its configuration directory
+2. Try creating a new note to test the functionality
+3. Restart VS Code and check if notes persist
+
 ## License
 
 This project is open source. Feel free to contribute improvements and bug fixes!
-
-1. Install `vsce` globally: `npm install -g vsce`
